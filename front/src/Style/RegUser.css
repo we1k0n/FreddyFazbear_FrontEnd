@@ -1,0 +1,218 @@
+.RegUserInput {
+    position: relative;
+    width: 476px;
+    height: 449px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+}
+
+.InputNameUser {
+    width: 446px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+.InputNameUser:hover {
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+.InputLastNameUser {
+    width: 446px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+.InputLastNameUser:hover {
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+.InputEmailRegUser {
+    width: 446px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+.InputEmailRegUser:hover {
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+.InputPassRegUser {
+    width: 446px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.InputPassRegUser:hover {
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+.InputRepeatPassRegUser {
+    width: 446px;
+    height: 45px;
+    border: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.InputRepeatPassRegUser:hover {
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+.RegUserRecForPass {
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    left: 20px;
+}
+
+
+
+.continueRegUser {
+    background: #ffffff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    text-align: center;
+    font-family: "DmSans-Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    width: 261px;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+.continueRegUser:hover{
+    border: 3px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}
+
+
+.RegUserSecondInfo {
+    width: 478px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    position: relative;
+}
+
+.RegUserLeftStick {
+    background: rgba(121, 117, 117, 0.29);
+    width: 130px;
+    height: 4px;
+    left: 0px;
+    top: 11px;
+    position: relative;
+}
+
+
+.RegUserRightStick {
+    background: rgba(121, 117, 117, 0.29);
+    width: 128px;
+    height: 4px;
+    left: 350px;
+    top: -40px;
+    position: relative;
+}
+
+.RegUserBottomInfo {
+    color: #797575;
+    text-align: left;
+    font-family: "DmSans-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    left: 162px;
+    top: -15px;
+    position: relative;
+}
+
+.RegUserBtnLogin {
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    text-align: center;
+    font-family: "DmSans-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    width: 89px;
+    height: 24px;
+    position: relative;
+    left: 189px;
+    top: -20px;
+    
+}
+
+.RegUserBtnLogin:hover{
+    border: 2px solid black;
+    transition-duration: 0.1s;
+    transition-delay: 0s, 1s;
+}

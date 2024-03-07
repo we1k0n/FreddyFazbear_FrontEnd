@@ -1,0 +1,10 @@
+.logotype{
+    position: absolute;
+    left: -25px;
+    top: -60px;
+}
+
+.logotypeImg{
+    width: 250px;
+    height: 250px;
+}
