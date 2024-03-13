@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import axios from "axios";
 import Logo from "./Components/Logo";
 import "./Style/Auth.css"
 import leftImage from "./Img/AuthPizzaLeft.png"
@@ -8,7 +9,43 @@ function Auth() {
     const [isRecoveryPasswordWindowOpenContinue, setRecoveryPasswordWindowOpenContinue] = useState(false)
     const practicePasswordWindowRef = useRef(null)
     const practicePasswordWindowRefContinue = useRef(null)
-    
+
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    }
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+
+        const authData = {
+            username: formData.email,
+            password: formData.password,
+        }
+
+        const apiUrl = 'http://127.0.0.1:8000/api/api/token/';
+
+        axios.post(apiUrl, authData)
+            .then((response) => {
+                console.log(response.data)
+                localStorage.setItem('access_token', response.data.access)
+                localStorage.setItem('refresh_token', response.data.refresh)
+
+                // window.location.pathname = '/'
+            })
+            .catch((error) => {
+                console.error('Помилка авторизації:', error)
+
+            });
+
+    }
 
     const toggleRecoveryPasswordWindow = () => {
         setRecoveryPasswordWindowOpen(!isRecoveryPasswordWindowOpen);
@@ -50,6 +87,8 @@ function Auth() {
 
 
 
+
+
     return (
         <>
             <div>
@@ -63,16 +102,20 @@ function Auth() {
                             className="InputEmailAuth"
                             type="email"
                             required placeholder="Введіть email"
-                            name="email" />
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange} />
 
                         <input
                             className="InputPasswordAuth"
                             type="password"
                             required placeholder="Введіть пароль"
-                            name="password" />
+                            name="password"
+                            value={formData.password}
+                            onChange={handleChange} />
 
                         <button onClick={toggleRecoveryPasswordWindow} className="recoveryPasswordButton">Забули пароль?</button>
-                        <button className="continue">Продовжити</button>
+                        <button className="continue" onClick={handleSubmit}>Продовжити</button>
                     </div>
                     <div className="AuthSecondInfo">
                         <div className="AuthLeftLine"></div>
@@ -121,10 +164,10 @@ function Auth() {
 
             {isRecoveryPasswordWindowOpenContinue && (
                 <>
-                <div onClick={toggleRecoveryPasswordWindowContinue} className="BackgroundWindowRecPass"></div>
-                <div className="BackgroundRecoveryPassword">
-                <p className="NewWindowText">Відновлення паролю</p>
-                <div onClick={toggleRecoveryPasswordWindowContinue} className="close-overlay">
+                    <div onClick={toggleRecoveryPasswordWindowContinue} className="BackgroundWindowRecPass"></div>
+                    <div className="BackgroundRecoveryPassword">
+                        <p className="NewWindowText">Відновлення паролю</p>
+                        <div onClick={toggleRecoveryPasswordWindowContinue} className="close-overlay">
                             <svg
                                 className="AuthIconCloseNewWindow"
                                 width="25"
@@ -140,9 +183,9 @@ function Auth() {
                             </svg>
                         </div>
                         <p className="GuideForRecoverPassword">Інструкція щодо відновлення паролю
-                            надіслана вам на електронну адресу! 
+                            надіслана вам на електронну адресу!
                         </p>
-                </div>
+                    </div>
                 </>
             )}
 
