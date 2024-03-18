@@ -1,0 +1,129 @@
+.NavigationFood{
+    width: 1621px;
+    height: 230px;
+    position: absolute;
+    left: 150px;
+    top: 240px;
+}
+
+.NavigatonText{
+    color: #000000;
+    text-align: left;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    left: 392px;
+}
+
+.FoodCategory{
+    width: 1621px;
+    height: 125px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+}
+
+.CategoryIconBackground{
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin-right: 60px;
+}
+
+.CategoryIconBackground1{
+    position: relative;
+    width: 125px;
+    height: 125px;
+}
+
+.AllIcon{
+    position: relative;
+    left: 30px;
+    top: 25px;
+}
+
+.AllIconText{
+    color: #000000;
+    text-align: center;
+    font-family: "OpenSans-SemiBold", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    width: 125px;
+    height: 25px;
+    top: 85px;
+}
+
+.PizzaIcon{
+    position: relative;
+    left: 42px;
+    top: 25px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.BurgerIcon{
+    position: relative;
+    left: 36px;
+    top: 25px;  
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.PastaIcon{
+    position: relative;
+    left: 36px;
+    top: 25px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.MeatIcon{
+    position: relative;
+    left: 30px;
+    top: 25px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.FishIcon{
+    position: relative;
+    left: 30px;
+    top: 20px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.SandwichIcon{
+    position: relative;
+    left: 38px;
+    top: 30px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.SoupIcon{
+    position: relative;
+    left: 36px;
+    top: 30px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.BakingIcon{
+    position: relative;
+    left: 36px;
+    top: 25px; 
+    height: auto;
+    position: relative;
+    overflow: visible;
+}

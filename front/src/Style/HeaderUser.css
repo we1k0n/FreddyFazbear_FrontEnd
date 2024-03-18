@@ -1,0 +1,51 @@
+.HeaderUser{
+    width: 1920px;
+    height: 348px;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+.LinkHeaderUser{
+    position: absolute;
+    width: 1920px;
+    height: 157px;
+    top: 0px;
+}
+
+.SearchInFuture{
+    width: 358px;
+    height: 74px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    margin-left: 280px;
+    margin-top: 28px;
+}
+
+.LinkHeaderStyle{
+    color: #000000;
+    text-align: left;
+    font-family: "Fascinate-Regular", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    left: 900px;
+    top: -60px;
+    margin-right: 100px;
+}
+
+.HeaderUserIconBack{
+    background: #ffffff;
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    position: relative;
+    left: 1778px;
+    top: -120px;
+}
+
+.HeaderUserIcon{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 15px;
+}
