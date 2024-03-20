@@ -1,0 +1,29 @@
+.DishesBackground{
+    background: linear-gradient(
+        135.77deg,
+        rgba(0, 0, 0, 0.4) 0.5544714163988829%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      border-radius: 16px;
+      border-width: 1px;
+      border-style: solid;
+      border-image: linear-gradient(
+        137.56deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-image-slice: 1;
+      width: 300px;
+      height: 301px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(21px);
+}
+
+.DishesBackground:nth-child(odd) {
+    grid-row: 1;
+}
+
+.DishesBackground:nth-child(even) {
+    grid-row: 2;
+}

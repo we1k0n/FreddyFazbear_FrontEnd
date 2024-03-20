@@ -1,0 +1,33 @@
+.MostPopularDishesbackground {
+    position: relative;
+    width: 1600px;
+    height: 759px;
+    left: 151px;
+    top: 150px;
+    margin-bottom: 400px;
+
+}
+
+.MostPopularDishesText {
+    color: #000000;
+    text-align: center;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.DishesListInMostPopularDiv {
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    width: 1600px;
+    height: 650px;
+    top: 43px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    grid-auto-rows: minmax(300px, auto);
+}
+

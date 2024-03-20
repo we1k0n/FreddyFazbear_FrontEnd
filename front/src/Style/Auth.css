@@ -1,6 +1,21 @@
+
+
 body {
     background-color: #FFD600;
+    
+}
+
+body::-webkit-scrollbar
+{
+    background-color: #ddd;
+    border-radius: 8px;
+    width: 7px;
     overflow: hidden;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: #a5a1a1;
+    border-radius: 8px;
 }
 
 .AuthLeftImg {
