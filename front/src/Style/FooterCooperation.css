@@ -1,0 +1,139 @@
+.FooterCooperationBackground{
+    position: relative;
+    bottom: 0;
+    width: 1920px;
+    height: 1597px;
+    margin-left: -8px;
+    margin-bottom: -100px;
+}
+
+.FooterCooperationBack{
+    height: 1510px;
+    position: relative;
+    overflow: visible;
+}
+
+.EllipseFooterCooperation{
+    background: #ffee94;
+    border-radius: 50%;
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    left: 837px;
+    top: -100px;
+}
+
+.HandFooterImg{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-top: 60px;
+    margin-left: 65px;
+}
+
+.CooperationDeliveryBackground{
+    position: absolute;
+    width: 325px;
+    height: 677px;
+    left: 527px;
+    top: 286px;
+}
+
+.CooperationRestaurantBackground{
+    position: absolute;
+    width: 340px;
+    height: 677px;
+    left: 1115px;
+    top: 286px;
+}
+
+.CooperationDeliveryImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CooperationRestaurantImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CooperationDeliveryHeaderText{
+    color: #000000;
+    text-align: center;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: relative;
+    width: 320px;
+    height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivery-kolomyia {
+    color: #000000;
+    text-align: center;
+    font-family: "-", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    width: 300px;
+    height: 192px;
+  }
+  .delivery-kolomyia-span {
+    color: #000000;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .delivery-kolomyia-span2 {
+    color: #000000;
+    font-family: "Encode Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .CooperationButton{
+    background: #ffffff;
+    border-radius: 30px;
+    width: 325px;
+    height: 52px;
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    text-align: center;
+    font-family: "DmSans Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    margin-top: 150px;
+  }
+
+  .CooperationRestaurantText{
+    color: #000000;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    height: 256px;
+    width: 340px;
+  }
+
+  .CooperationResButton{
+    background: #ffffff;
+    border-radius: 30px;
+    width: 325px;
+    height: 52px;
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    text-align: center;
+    font-family: "DmSans Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    margin-top: 37px;
+  }

@@ -6,6 +6,9 @@ import NavigationFood from "./Components/NavigationFood";
 import FooterInfo from "./Components/FooterInfo";
 import MostPopularDishes from "./Components/MostPopularDishes";
 import DishesDiv from "./Components/DishesDiv";
+import MostPopularRestaurants from "./Components/MostPopularRestautants";
+import RestaurantsDiv from "./Components/RestaurantsDiv";
+import FooterCooperation from "./Components/FooterCooperation";
 function MainPageForAuthUser(){
     return(
     <>
@@ -16,18 +19,35 @@ function MainPageForAuthUser(){
             <DishesDiv/>
             <DishesDiv/>
             <DishesDiv/>
-
-
-
-
-
-
-            
-            
-            
-          
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
+            <DishesDiv/>
         </MostPopularDishes>
-        <FooterInfo/>
+        <MostPopularRestaurants>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+            <RestaurantsDiv/>
+        </MostPopularRestaurants>
+        <FooterCooperation>
+         <FooterInfo/>   
+        </FooterCooperation>
+        
     </>
     );
 }

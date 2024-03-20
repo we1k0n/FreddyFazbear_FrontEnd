@@ -1,11 +1,10 @@
 .Footer{
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: auto;
-    margin-left: -9px;
+    margin-left: -5px;
     margin-bottom: -5px;
-
 }
 
 .FooterBackground{
@@ -13,7 +12,7 @@
     height: 495.89px;
     position: relative;
     overflow: visible;
-    z-index: -1;
+    z-index: 0;
 }
 
 .FooterLogo{
