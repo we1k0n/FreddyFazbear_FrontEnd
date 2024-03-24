@@ -13,18 +13,18 @@ const DishesDiv = () => {
       const response = await fetch('http://127.0.0.1:8000/api/dishes/');
       const jsonData = await response.json();
       setData(jsonData);
-      console.log(data)
     } catch (error) {
       console.error('Помилка завантаження даних:', error);
     }
   };
 
     return (
-        <div className="DishesBackground1">
-            
-            <img className="DishesItemImage1" src={DishImg} alt="none" />
-            <div className="DishItemName1">Бургер Біг Мак</div>
-            <div className="DishItemPrice1">250 грн</div>
+        <>
+        {data.map(item => (
+        <div className="DishesBackground1" key={item.id}>
+            <img className="DishesItemImage1" src={item.photo} alt="none" />
+            <div className="DishItemName1">{item.name}</div>
+            <div className="DishItemPrice1">{item.cost} UAH</div>
             <div className="DishItemTimeBackground1">
                 <div className="DishItemTimeText1">30 mins</div>
                 <svg
@@ -57,6 +57,9 @@ const DishesDiv = () => {
                 </svg>
             </div>
         </div>
+           ))}
+        </>
+        
     );
 }
 

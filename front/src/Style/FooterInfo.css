@@ -1,13 +1,19 @@
-.Footer{
+.Footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: auto;
-    margin-left: -5px;
-    margin-bottom: -5px;
+    height: 500px;
+    margin-left: -150px;
+    margin-top: 50px;
 }
 
-.FooterBackground{
+.Footer1 {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    bottom: 0;
+}
+
+.FooterBackground {
     width: 1920px;
     height: 495.89px;
     position: relative;
@@ -15,7 +21,7 @@
     z-index: 0;
 }
 
-.FooterLogo{
+.FooterLogo {
     position: absolute;
     left: 326px;
     top: 27px;
@@ -23,7 +29,7 @@
     height: 157px;
 }
 
-.FooterInfoTextBack{
+.FooterInfoTextBack {
     position: absolute;
     width: 1738px;
     height: 238px;
@@ -33,7 +39,7 @@
     flex-direction: row;
 }
 
-.FooterTextHeader{
+.FooterTextHeader {
     color: #000000;
     font-family: "Fascinate Inline", sans-serif;
     font-size: 40px;
@@ -41,18 +47,19 @@
     text-align: center;
 }
 
-.FooterText{
+.FooterText {
     color: #797575;
     font-family: "Fascinate Inline-Regular", sans-serif;
     font-size: 36px;
     font-weight: 400;
     text-align: center;
 }
-.FooterInfoBack{
+
+.FooterInfoBack {
     margin-right: 90px;
 }
 
-.FooterHelpInfo{
+.FooterHelpInfo {
     color: #000000;
     text-align: left;
     font-family: "Fascinate Inline", sans-serif;

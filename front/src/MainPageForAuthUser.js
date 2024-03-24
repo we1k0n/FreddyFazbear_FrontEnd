@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Style/MainPageForAuthUser.css"
 import Logo from "./Components/Logo";
 import HeaderUser from "./Components/HeaderUser";
@@ -10,24 +10,20 @@ import MostPopularRestaurants from "./Components/MostPopularRestautants";
 import RestaurantsDiv from "./Components/RestaurantsDiv";
 import FooterCooperation from "./Components/FooterCooperation";
 function MainPageForAuthUser(){
+    const [numberFromComponent, setNumberFromComponent] = useState(0);
+    const getDataFromComponent = (data) => {
+        setNumberFromComponent(data);
+        console.log(data);
+    };
     return(
     <>
+    <div className="NavagationBackgrondMove"
+            style={{ left: `150px` }}
+            ></div>
         <Logo/>
         <HeaderUser/>
-        <NavigationFood/>
+        <NavigationFood sendData={getDataFromComponent} />
         <MostPopularDishes>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
-            <DishesDiv/>
             <DishesDiv/>
         </MostPopularDishes>
         <MostPopularRestaurants>

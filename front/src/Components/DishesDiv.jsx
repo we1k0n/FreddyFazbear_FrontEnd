@@ -1,12 +1,32 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import "../Style/DishesDiv.css"
 import DishImg from "../Img/DishesImg.png"
 const DishesDiv = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetchData();
+      }, []);
+    
+      const fetchData = async () => {
+        try {
+          const response = await fetch('http://127.0.0.1:8000/api/dishes/');
+          const jsonData = await response.json();
+          setData(jsonData);
+        } catch (error) {
+          console.error('Помилка завантаження даних:', error);
+        }
+      };
+
+
+
     return (
-        <div className="DishesBackground">
-            <img className="DishesItemImage" src={DishImg} alt="none" />
-            <div className="DishItemName">Бургер Біг Мак</div>
-            <div className="DishItemPrice">250 грн</div>
+
+        <>
+        {data.map(item => (
+        <div className="DishesBackground" key={item.id}>
+            <img className="DishesItemImage" src={item.photo} alt="none" />
+            <div className="DishItemName">{item.name}</div>
+            <div className="DishItemPrice">{item.cost} UAH</div>
             <div className="DishItemTimeBackground">
                 <div className="DishItemTimeText">30 mins</div>
                 <svg
@@ -39,6 +59,9 @@ const DishesDiv = () => {
                 </svg>
             </div>
         </div>
+         ))}
+        </>
+        
     );
 }
 

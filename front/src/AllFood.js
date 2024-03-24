@@ -4,6 +4,7 @@ import HeaderUser from "./Components/HeaderUser";
 import NavigationFood from "./Components/NavigationFood";
 import AllFoodComponetns from "./Components/AllFoodComponents";
 import DishesDiv1 from "./Components/DishesDiv1";
+import FooterInfo from "./Components/FooterInfo";
 
 
 function AllFood() {
@@ -78,18 +79,8 @@ function AllFood() {
                 <NavigationFood sendData={getDataFromComponent} />
                 <AllFoodComponetns>
                     <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-                    <DishesDiv1 />
-
                 </AllFoodComponetns>
+                
             </>
         );
     }

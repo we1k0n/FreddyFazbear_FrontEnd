@@ -3,6 +3,7 @@ import "../Style/FooterInfo.css"
 import Image from "../Img/logofooter.png"
 
 const FooterInfo = () => {
+
     return (
         <div className="Footer">
             <svg
