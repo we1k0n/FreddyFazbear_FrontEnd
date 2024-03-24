@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Style/NavigationFood.css"
-const NavigationFood = () => {
+
+
+
+const NavigationFood = ({ sendData }) => {
+    const [CategoryId, setCategoryId] = useState(0);
+    sendData(CategoryId);
+
+
     return (
         <div className="NavigationFood">
             <div className="NavigatonText">Обери свою улюблену категорію!</div>
             <div className="FoodCategory">
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(0)}>
                     <svg
                         className="AllIcon"
                         width="67"
@@ -35,7 +42,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Все</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(1)}>
                     <svg
                         className="PizzaIcon"
                         width="47"
@@ -51,7 +58,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Піца</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(2)}>
                     <svg
                         className="BurgerIcon"
                         width="53"
@@ -92,7 +99,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Бургер</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(3)}>
                     <svg
                         class="PastaIcon"
                         width="56"
@@ -146,7 +153,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Паста</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(4)}>
                     <svg
                         className="MeatIcon"
                         width="58"
@@ -187,7 +194,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">М'ясо</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(5)}>
                     <svg
                         className="FishIcon"
                         width="67"
@@ -215,7 +222,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Риба</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(6)}>
                     <svg
                         className="SandwichIcon"
                         width="50"
@@ -262,7 +269,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Сендвічі</div>
                 </div>
-                <div className="CategoryIconBackground">
+                <div className="CategoryIconBackground" onClick={() => setCategoryId(7)}>
                     <svg
                         className="SoupIcon"
                         width="50"
@@ -309,7 +316,7 @@ const NavigationFood = () => {
                     </svg>
                     <div className="AllIconText">Супи</div>
                 </div>
-                <div className="CategoryIconBackground1">
+                <div className="CategoryIconBackground1" onClick={() => setCategoryId(8)}>
                     <svg
                         className="BakingIcon"
                         width="53"

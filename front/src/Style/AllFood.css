@@ -1,0 +1,28 @@
+.AllFoodBackgrond{
+    position: absolute;
+    width: 1624px;
+    height: auto;
+    left: 148px;
+    top: 600px;
+}
+
+.HeaderAllFood{
+    color: #000000;
+    text-align: left;
+    font-family: "Fascinate Inline", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    left: 150px;
+    top: 510px;
+}
+
+.ListDishesAllFood{
+    position: relative;
+    width: 1624px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 колонок */
+    grid-gap: 10px;
+    
+}

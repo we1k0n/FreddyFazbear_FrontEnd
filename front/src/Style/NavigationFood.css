@@ -127,3 +127,24 @@
     position: relative;
     overflow: visible;
 }
+
+.NavagationBackgrondMove{
+    background: linear-gradient(
+        130.03deg,
+        rgba(255, 255, 255, 0.24) 0.5444714333862066%,
+        rgba(255, 228, 86, 0.4) 0.5544714163988829%,
+        rgba(255, 214, 0, 1) 99.00000095367432%
+      );
+      border-radius: 13px;
+      border-width: 1px;
+      border-style: solid;
+    border: none;
+      border-image-slice: 1;
+      width: 125px;
+      height: 125px;
+      position: absolute;
+      overflow: hidden;
+      backdrop-filter: blur(21px);
+      top: 330px;
+
+}
